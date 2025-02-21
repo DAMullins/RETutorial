@@ -1,0 +1,16 @@
+.navbar {
+    position: fixed; /* Or relative */
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    height: 60px;
+  }
+  
+  .navbar-container {
+    width: 90%; /* Or a fixed width */
+    margin: 0 auto;
+    display: flex;
+  }
+  
+  /* Remove all other styles temporarily */

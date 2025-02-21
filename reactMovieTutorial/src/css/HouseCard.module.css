@@ -1,0 +1,47 @@
+.houseCardContainer {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 16px;
+    width: 300px;
+    transition: transform 0.2s ease-in-out;
+    cursor: pointer; /* Make it clear it's clickable */
+  }
+  
+  .houseCardContainer:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .houseImage {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+    margin-bottom: 10px;
+  }
+  
+  .houseInfo h3 {
+    margin-bottom: 5px;
+  }
+  
+  .houseInfo p {
+    margin: 0;
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .expandedInfo {
+    margin-top: 10px;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.3s ease-in-out;
+  }
+  
+  .expandedVisible { /* Class to show the expanded content */
+    max-height: 200px; /* Or whatever height you need */
+  }
+  
+  .expandedInfo p {
+    margin: 5px 0;
+  }

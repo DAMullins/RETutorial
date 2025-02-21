@@ -1,0 +1,110 @@
+/* Navbar.css */
+
+.navbar {
+    background-color: #333;
+    height: 60px;
+    display: flex;
+    justify-content: center; /* Center the container horizontally */
+    align-items: center;
+    position: fixed; /* Or relative, as needed */
+    width: 100%;
+    top: 0;
+    left:0;
+    z-index: 100;
+    margin:0
+  }
+  
+  .navbar-container {
+    display: flex;
+    justify-content: space-between; /* Distribute logo and menu */
+    align-items: center;
+    width: 90%; /* Adjust width as needed */
+    max-width: 1200px; /* Optional max-width */
+    margin: 0 auto; /* Center the container */
+    padding: 0 20px; /* Add some padding */
+  }
+  
+  .navbar-logo {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-right: auto; /* Push logo to the left */
+  }
+  
+  .navbar-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Menu items in a row */
+  }
+  
+  .navbar-item {
+    margin-left: 20px;
+  }
+  
+  .navbar-link {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar-link:hover {
+    color: #f0f0f0;
+  }
+  
+  /* Responsive Styles */
+  .menu-icon {
+    display: none;
+    cursor: pointer;
+  }
+  
+  .bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px auto;
+  }
+  
+  @media (max-width: 768px) {
+    .navbar-menu {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      width: 100%;
+      background-color: #333;
+      text-align: center;
+    }
+  
+    .navbar-item {
+      margin: 0;
+      padding: 10px 0;
+      border-bottom: 1px solid #555;
+    }
+  
+    .navbar-link {
+      display: block;
+    }
+  
+    .menu-icon {
+      display: block;
+    }
+  
+    .navbar-menu.active {
+      display: flex;
+    }
+  
+    /* Improve mobile menu styling if needed */
+    .navbar-container {
+      flex-direction: column; /* Stack logo and menu vertically */
+      align-items: flex-start;  /* Align items to the left */
+      padding: 10px; /* Adjust padding for mobile */
+    }
+  
+    .navbar-logo {
+      margin-bottom: 10px; /* Add space below logo in mobile */
+    }
+  }
